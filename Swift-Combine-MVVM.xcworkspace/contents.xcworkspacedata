@@ -7,4 +7,7 @@
    <FileRef
       location = "group:Swift-Combine-MVVM-iPadOS/Swift-Combine-MVVM-iPadOS.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

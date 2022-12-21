@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41310DD1A0E3054DD283B879 /* Pods_Swift_Combine_MVVM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A64E170E92E56E80607662 /* Pods_Swift_Combine_MVVM_iOS.framework */; };
 		684CB7852952BC6F0017AF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7842952BC6F0017AF9E /* AppDelegate.swift */; };
-		684CB7872952BC6F0017AF9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7862952BC6F0017AF9E /* SceneDelegate.swift */; };
-		684CB7892952BC6F0017AF9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7882952BC6F0017AF9E /* ViewController.swift */; };
-		684CB78C2952BC6F0017AF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684CB78A2952BC6F0017AF9E /* Main.storyboard */; };
 		684CB78E2952BC710017AF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684CB78D2952BC710017AF9E /* Assets.xcassets */; };
 		684CB7912952BC710017AF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684CB78F2952BC710017AF9E /* LaunchScreen.storyboard */; };
 		684CB79C2952BC710017AF9E /* Swift_Combine_MVVM_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB79B2952BC710017AF9E /* Swift_Combine_MVVM_iOSTests.swift */; };
 		684CB7A62952BC710017AF9E /* Swift_Combine_MVVM_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7A52952BC710017AF9E /* Swift_Combine_MVVM_iOSUITests.swift */; };
 		684CB7A82952BC710017AF9E /* Swift_Combine_MVVM_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7A72952BC710017AF9E /* Swift_Combine_MVVM_iOSUITestsLaunchTests.swift */; };
+		684CB7F32952D2950017AF9E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7F22952D2950017AF9E /* FlowCoordinator.swift */; };
+		684CB7F52952D50F0017AF9E /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7F42952D50F0017AF9E /* MainFlowCoordinator.swift */; };
+		684CB7F72952D6950017AF9E /* ApplicationFlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7F62952D6950017AF9E /* ApplicationFlowCoordinatorDependencyProvider.swift */; };
+		684CB7FB2952D7480017AF9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7FA2952D7480017AF9E /* MainViewController.swift */; };
+		684CB7FD2952DB490017AF9E /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7FC2952DB490017AF9E /* ApplicationFlowCoordinator.swift */; };
+		684CB7FF2952DC810017AF9E /* ApplicationComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684CB7FE2952DC810017AF9E /* ApplicationComponentsFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036471B0116D78D7F073FE3A /* Pods-Swift-Combine-MVVM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Combine-MVVM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Combine-MVVM-iOS/Pods-Swift-Combine-MVVM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		684CB7812952BC6F0017AF9E /* Swift-Combine-MVVM-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Combine-MVVM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		684CB7842952BC6F0017AF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		684CB7862952BC6F0017AF9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		684CB7882952BC6F0017AF9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		684CB78B2952BC6F0017AF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684CB78D2952BC710017AF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684CB7902952BC710017AF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684CB7922952BC710017AF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 		684CB7A12952BC710017AF9E /* Swift-Combine-MVVM-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Combine-MVVM-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		684CB7A52952BC710017AF9E /* Swift_Combine_MVVM_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Combine_MVVM_iOSUITests.swift; sourceTree = "<group>"; };
 		684CB7A72952BC710017AF9E /* Swift_Combine_MVVM_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Combine_MVVM_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		684CB7F22952D2950017AF9E /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		684CB7F42952D50F0017AF9E /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		684CB7F62952D6950017AF9E /* ApplicationFlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
+		684CB7FA2952D7480017AF9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		684CB7FC2952DB490017AF9E /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
+		684CB7FE2952DC810017AF9E /* ApplicationComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationComponentsFactory.swift; sourceTree = "<group>"; };
+		A2A180CFE4519078F6AA303C /* Pods-Swift-Combine-MVVM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Combine-MVVM-iOS.release.xcconfig"; path = "Target Support Files/Pods-Swift-Combine-MVVM-iOS/Pods-Swift-Combine-MVVM-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F3A64E170E92E56E80607662 /* Pods_Swift_Combine_MVVM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Combine_MVVM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41310DD1A0E3054DD283B879 /* Pods_Swift_Combine_MVVM_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 				684CB79A2952BC710017AF9E /* Swift-Combine-MVVM-iOSTests */,
 				684CB7A42952BC710017AF9E /* Swift-Combine-MVVM-iOSUITests */,
 				684CB7822952BC6F0017AF9E /* Products */,
+				B908AFAC20A74A279D83D9FC /* Pods */,
+				73226AD232E29E83ECBD2445 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +112,7 @@
 		684CB7832952BC6F0017AF9E /* Swift-Combine-MVVM-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				684CB7842952BC6F0017AF9E /* AppDelegate.swift */,
-				684CB7862952BC6F0017AF9E /* SceneDelegate.swift */,
-				684CB7882952BC6F0017AF9E /* ViewController.swift */,
-				684CB78A2952BC6F0017AF9E /* Main.storyboard */,
+				684CB7F02952C2C40017AF9E /* Sources */,
 				684CB78D2952BC710017AF9E /* Assets.xcassets */,
 				684CB78F2952BC710017AF9E /* LaunchScreen.storyboard */,
 				684CB7922952BC710017AF9E /* Info.plist */,
@@ -127,6 +137,62 @@
 			path = "Swift-Combine-MVVM-iOSUITests";
 			sourceTree = "<group>";
 		};
+		684CB7F02952C2C40017AF9E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				684CB7842952BC6F0017AF9E /* AppDelegate.swift */,
+				684CB7F12952D2790017AF9E /* FlowCoordinators */,
+				684CB7F82952D7140017AF9E /* Screens */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		684CB7F12952D2790017AF9E /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				684CB7F22952D2950017AF9E /* FlowCoordinator.swift */,
+				684CB7FC2952DB490017AF9E /* ApplicationFlowCoordinator.swift */,
+				684CB7FE2952DC810017AF9E /* ApplicationComponentsFactory.swift */,
+				684CB7F62952D6950017AF9E /* ApplicationFlowCoordinatorDependencyProvider.swift */,
+				684CB7F42952D50F0017AF9E /* MainFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		684CB7F82952D7140017AF9E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				684CB7F92952D72B0017AF9E /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		684CB7F92952D72B0017AF9E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				684CB7FA2952D7480017AF9E /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		73226AD232E29E83ECBD2445 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3A64E170E92E56E80607662 /* Pods_Swift_Combine_MVVM_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B908AFAC20A74A279D83D9FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				036471B0116D78D7F073FE3A /* Pods-Swift-Combine-MVVM-iOS.debug.xcconfig */,
+				A2A180CFE4519078F6AA303C /* Pods-Swift-Combine-MVVM-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 684CB7AB2952BC710017AF9E /* Build configuration list for PBXNativeTarget "Swift-Combine-MVVM-iOS" */;
 			buildPhases = (
+				F9F141769B3BC1F2107E775F /* [CP] Check Pods Manifest.lock */,
 				684CB77D2952BC6F0017AF9E /* Sources */,
 				684CB77E2952BC6F0017AF9E /* Frameworks */,
 				684CB77F2952BC6F0017AF9E /* Resources */,
+				49620225D65A9BEE999DFDD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +301,6 @@
 			files = (
 				684CB7912952BC710017AF9E /* LaunchScreen.storyboard in Resources */,
 				684CB78E2952BC710017AF9E /* Assets.xcassets in Resources */,
-				684CB78C2952BC6F0017AF9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +320,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49620225D65A9BEE999DFDD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Combine-MVVM-iOS/Pods-Swift-Combine-MVVM-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Combine-MVVM-iOS/Pods-Swift-Combine-MVVM-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Combine-MVVM-iOS/Pods-Swift-Combine-MVVM-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F141769B3BC1F2107E775F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift-Combine-MVVM-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		684CB77D2952BC6F0017AF9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684CB7892952BC6F0017AF9E /* ViewController.swift in Sources */,
+				684CB7F32952D2950017AF9E /* FlowCoordinator.swift in Sources */,
 				684CB7852952BC6F0017AF9E /* AppDelegate.swift in Sources */,
-				684CB7872952BC6F0017AF9E /* SceneDelegate.swift in Sources */,
+				684CB7F52952D50F0017AF9E /* MainFlowCoordinator.swift in Sources */,
+				684CB7FB2952D7480017AF9E /* MainViewController.swift in Sources */,
+				684CB7FF2952DC810017AF9E /* ApplicationComponentsFactory.swift in Sources */,
+				684CB7FD2952DB490017AF9E /* ApplicationFlowCoordinator.swift in Sources */,
+				684CB7F72952D6950017AF9E /* ApplicationFlowCoordinatorDependencyProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +410,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		684CB78A2952BC6F0017AF9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				684CB78B2952BC6F0017AF9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		684CB78F2952BC710017AF9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +537,7 @@
 		};
 		684CB7AC2952BC710017AF9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036471B0116D78D7F073FE3A /* Pods-Swift-Combine-MVVM-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,8 +546,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Swift-Combine-MVVM-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -463,6 +568,7 @@
 		};
 		684CB7AD2952BC710017AF9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A180CFE4519078F6AA303C /* Pods-Swift-Combine-MVVM-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,8 +577,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Swift-Combine-MVVM-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
