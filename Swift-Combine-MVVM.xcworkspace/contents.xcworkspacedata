@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Components/Components.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Swift-Combine-MVVM-iOS/Swift-Combine-MVVM-iOS.xcodeproj">
    </FileRef>
    <FileRef
